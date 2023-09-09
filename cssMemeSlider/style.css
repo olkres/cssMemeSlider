@@ -123,3 +123,13 @@ label:hover span {
 #slide4:checked ~ .navigation .controls .button-4 span{
     background-color: black;
 }
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .controls {
+        justify-content: center;
+    }
+}
