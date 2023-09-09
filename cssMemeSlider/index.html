@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./pictures/mem-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Meme slider</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <input type="radio" id="slide1" name="slides" checked />
+      <input type="radio" id="slide2" name="slides" />
+      <input type="radio" id="slide3" name="slides" />
+      <input type="radio" id="slide4" name="slides" />
+      <div class="slider">
+        <div class="slides visible">
+          <div class="slide">
+            <img src="./pictures/drunk.jpg" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./pictures/nirvana.jpg" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="./pictures/milk.jpg" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="./pictures/pig.jpg" alt="Image 4" />
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="text">
+          <div class="text__content text-1">woman beats the devil</div>
+          <div class="text__content text-2">nirvana</div>
+          <div class="text__content text-3">jar of milk</div>
+          <div class="text__content text-4">pig in suit</div>
+        </div>
+        <div class="controls">
+          <label class="button-1" for="slide1"><span></span></label>
+          <label class="button-2" for="slide2"><span></span></label>
+          <label class="button-3" for="slide3"><span></span></label>
+          <label class="button-4" for="slide4"><span></span></label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
